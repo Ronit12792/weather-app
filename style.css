@@ -1,0 +1,105 @@
+/* Basic reset for margins and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.search-container {
+    text-align: center; /* Center align the input and button */
+    padding: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px; /* Set a width for the input */
+    font-size: 16px;
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-left: 10px; /* Space between input and button */
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:focus {
+    outline: 2px solid #0056b3; /* Add a focus outline for accessibility */
+}
+
+.result-container {
+    text-align: center; /* Center the results */
+    margin-top: 20px; /* Space above results */
+    background-color: #fff; /* White background for results */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.result-container:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
+}
+
+h3, h6, p {
+    margin: 5px 0; /* Space between lines */
+}
+
+h3 {
+    font-size: 24px; /* Larger font for city name */
+}
+
+h6 {
+    font-size: 18px; /* Slightly smaller font for date and time */
+}
+
+p {
+    font-size: 20px; /* Medium font for temperature */
+}
+
+/* Loading Indicator Styles */
+.loading {
+    font-size: 18px; /* Font size for loading text */
+    color: #007BFF; /* Color matching the button */
+    margin-top: 10px; /* Space above loading text */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red; /* Red color for error messages */
+    font-size: 18px; /* Font size for error message */
+    margin-top: 10px; /* Space above error message */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+    button {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0; /* Remove margin on small screens */
+        margin-top: 10px; /* Add space above button */
+    }
+    .result-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
